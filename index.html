@@ -3,128 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suhaniben Krupal Chaudhari | Supply Chain Analyst Portfolio</title>
+<title>Suhaniben Krupal Chaudhari | Supply Chain Analyst</title>
 <meta name="description" content="Supply Chain Analyst with 4+ years of experience in transportation, logistics, warehouse operations, and supply chain analytics. SQL, Python, Power BI, TMS, WMS.">
-<meta name="keywords" content="Supply Chain Analyst, Logistics, Transportation, Demand Forecasting, Inventory Optimization, Power BI, SQL, Python">
+<meta name="keywords" content="Supply Chain Analyst, Logistics, Transportation, Demand Forecasting, Inventory Optimization, Power BI, SQL, Python, TMS, WMS">
 <meta name="author" content="Suhaniben Krupal Chaudhari">
+<meta name="theme-color" content="#163A5F">
 <meta property="og:title" content="Suhaniben Krupal Chaudhari | Supply Chain Analyst">
 <meta property="og:description" content="Transportation, warehouse, and inventory analytics portfolio.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#F8FAFC;--card:#fff;--p:#2563EB;--s:#06B6D4;--a:#7C3AED;--t:#0F172A;--m:#64748B;--b:rgba(0,0,0,.08);--sh:0 20px 60px rgba(0,0,0,.1);--tr:.3s cubic-bezier(.4,0,.2,1)}
-[data-theme=dark]{--bg:#0F172A;--card:#1E293B;--p:#3B82F6;--s:#22D3EE;--a:#A855F7;--t:#F8FAFC;--m:#CBD5E1;--b:rgba(255,255,255,.08);--sh:0 20px 60px rgba(0,0,0,.4)}
+:root{--bg:#F7F9FC;--card:#FFFFFF;--navy:#163A5F;--p:#2878A8;--t:#0F1B2D;--m:#5B6B7F;--b:rgba(15,27,45,.10);--sh:0 12px 40px rgba(15,27,45,.10);--tr:.25s ease}
+[data-theme=dark]{--bg:#0C1624;--card:#13223A;--navy:#8CC4E8;--p:#4A9FD0;--t:#F1F5F9;--m:#A9B8CA;--b:rgba(255,255,255,.10);--sh:0 12px 40px rgba(0,0,0,.45)}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);line-height:1.7;transition:background var(--tr),color var(--tr);overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-h1,h2,h3{line-height:1.2;font-weight:700}
-.container{max-width:1200px;margin:0 auto;padding:0 24px}
-#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--p),var(--s),var(--a));z-index:2000}
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:var(--tr)}
-.nav.scrolled{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--b);padding:10px 0}
-.nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
-.logo{font-size:20px;font-weight:800;color:var(--p)}
-.links{display:flex;gap:6px;list-style:none}
+h1,h2,h3{line-height:1.25;font-weight:700}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--p);z-index:2000}
+
+/* Navigation */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:padding var(--tr)}
+.nav::before{content:'';position:absolute;inset:0;z-index:-1;transition:var(--tr);border-bottom:1px solid transparent}
+.nav.scrolled{padding:10px 0}
+.nav.scrolled::before{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--b)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:0 auto;padding:0 24px}
+.logo{font-size:15px;font-weight:700;color:var(--navy);letter-spacing:.02em;position:relative;z-index:1001}
+.links{display:flex;gap:4px;list-style:none}
 .links a{padding:8px 14px;border-radius:8px;font-size:14px;font-weight:500;color:var(--m);transition:var(--tr)}
-.links a:hover,.links a.active{color:var(--p);background:rgba(37,99,235,.08)}
-.tools{display:flex;align-items:center;gap:8px}
-.ico{width:40px;height:40px;border-radius:10px;border:1px solid var(--b);background:var(--card);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--t);transition:var(--tr)}
+.links a:hover,.links a.active{color:var(--p);background:rgba(40,120,168,.10)}
+.tools{display:flex;align-items:center;gap:8px;position:relative;z-index:1001}
+.ico{width:38px;height:38px;border-radius:8px;border:1px solid var(--b);background:var(--card);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;color:var(--t);transition:var(--tr)}
 .ico:hover{border-color:var(--p);color:var(--p)}
 .burger{display:none}
-.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:var(--p);filter:blur(120px);opacity:.14;top:-200px;right:-100px}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative}
-.photo{display:flex;justify-content:center}
-.photo-box{position:relative;width:320px;height:320px;border-radius:50%;border:4px solid var(--card);box-shadow:var(--sh);overflow:hidden;background:linear-gradient(135deg,var(--p),var(--a));display:flex;align-items:center;justify-content:center;font-size:96px;font-weight:800;color:#fff}
-.photo-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);border-radius:100px;font-size:13px;font-weight:500;color:var(--p);margin-bottom:20px}
-.badge i{width:8px;height:8px;background:var(--p);border-radius:50%}
-.name{font-size:clamp(32px,5vw,54px);font-weight:900;margin-bottom:8px}
-.role{font-size:clamp(18px,3vw,24px);font-weight:600;color:var(--p);margin-bottom:12px}
-.tag{color:var(--m);margin-bottom:16px}
-.typing{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--s);margin-bottom:24px;min-height:24px}
-.typing::after{content:'';display:inline-block;width:2px;height:16px;background:var(--s);vertical-align:middle;margin-left:2px;animation:blink 1s infinite}
-@keyframes blink{50%{opacity:0}}
-.btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;border:1.5px solid transparent;transition:var(--tr)}
-.btn-p{background:linear-gradient(135deg,var(--p),var(--a));color:#fff}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 6px 25px rgba(37,99,235,.4)}
-.btn-o{border-color:var(--b);color:var(--t)}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;border-bottom:1px solid var(--b)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--p);letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:#16A34A}
+.name{font-size:clamp(34px,5vw,56px);font-weight:800;color:var(--navy);margin-bottom:10px;letter-spacing:-.02em}
+.role{font-size:clamp(18px,2.6vw,22px);font-weight:600;margin-bottom:16px}
+.tag{color:var(--m);max-width:540px;margin-bottom:28px;font-size:17px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:600;border:1px solid transparent;transition:var(--tr);cursor:pointer;font-family:inherit;background:none;color:inherit}
+.btn-p{background:var(--navy);color:#fff}
+[data-theme=dark] .btn-p{background:var(--p);color:#fff}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,58,95,.30)}
+.btn-o{border-color:var(--b);background:var(--card);color:var(--t)}
 .btn-o:hover{border-color:var(--p);color:var(--p)}
 .btn-i{width:44px;height:44px;padding:0;justify-content:center}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.stat{text-align:center;padding:14px 6px;background:var(--card);border-radius:12px;border:1px solid var(--b)}
-.stat b{font-size:22px;font-weight:800;color:var(--p);display:block}
-.stat span{font-size:11px;color:var(--m)}
-.sec{padding:100px 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:560px}
+.stat{padding:16px 10px;background:var(--card);border-radius:10px;border:1px solid var(--b);text-align:center}
+.stat b{font-size:22px;font-weight:800;color:var(--navy);display:block}
+.stat span{font-size:11px;color:var(--m);line-height:1.3;display:block}
+.photo{display:flex;justify-content:center}
+.photo-box{position:relative;width:300px;height:300px;border-radius:50%;border:6px solid var(--card);box-shadow:var(--sh);overflow:hidden;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:84px;font-weight:700;color:#fff}
+[data-theme=dark] .photo-box{background:var(--p)}
+.photo-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Sections */
+.sec{padding:96px 0}
 .alt{background:var(--card)}
-.head{text-align:center;margin-bottom:56px}
-.head h2{font-size:clamp(28px,4vw,40px);font-weight:800;margin-bottom:12px}
-.head p{color:var(--m);max-width:600px;margin:0 auto}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.about p{color:var(--m);margin-bottom:20px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{padding:6px 14px;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);border-radius:100px;font-size:13px;font-weight:500;color:var(--p)}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.fact{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:26px;text-align:center}
-.fact b{font-size:32px;font-weight:800;color:var(--p);display:block}
+.head{text-align:center;margin-bottom:52px}
+.head h2{font-size:clamp(26px,4vw,36px);font-weight:800;color:var(--navy);margin-bottom:10px;letter-spacing:-.01em}
+.head p{color:var(--m);max-width:620px;margin:0 auto}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.about p{color:var(--m);margin-bottom:18px}
+.about strong{color:var(--t)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{padding:6px 14px;background:rgba(40,120,168,.08);border:1px solid rgba(40,120,168,.18);border-radius:6px;font-size:13px;font-weight:500;color:var(--p)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fact{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:24px;text-align:center}
+.alt .fact{background:var(--bg)}
+.fact b{font-size:30px;font-weight:800;color:var(--navy);display:block}
 .fact span{font-size:13px;color:var(--m)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}
-.card{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:30px;transition:var(--tr)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:28px;transition:var(--tr)}
 .alt .card{background:var(--bg)}
-.card:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:var(--p)}
-.card h3{font-size:18px;margin-bottom:14px}
-.card .ic{width:46px;height:46px;border-radius:12px;background:rgba(37,99,235,.1);color:var(--p);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:18px}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:var(--p)}
+.card h3{font-size:17px;margin-bottom:14px;color:var(--t)}
+.card .ic{width:44px;height:44px;border-radius:10px;background:rgba(40,120,168,.10);color:var(--p);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:16px}
 .sk{display:flex;flex-wrap:wrap;gap:6px}
-.sk span{padding:4px 11px;background:var(--card);border:1px solid var(--b);border-radius:6px;font-size:12px;color:var(--m);font-weight:500}
+.sk span{padding:4px 10px;background:var(--card);border:1px solid var(--b);border-radius:6px;font-size:12px;color:var(--m);font-weight:500}
 .alt .sk span{background:var(--card)}
+
+/* Experience */
 .tl{max-width:820px;margin:0 auto;position:relative;padding-left:36px}
 .tl::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--b)}
-.job{position:relative;margin-bottom:36px}
-.job::before{content:'';position:absolute;left:-36px;top:30px;width:16px;height:16px;background:var(--p);border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 0 3px var(--p)}
-.job .co{font-size:13px;font-weight:600;color:var(--p)}
-.job h3{font-size:20px;margin:2px 0}
+.job{position:relative;margin-bottom:40px}
+.job:last-child{margin-bottom:0}
+.job::before{content:'';position:absolute;left:-36px;top:8px;width:16px;height:16px;background:var(--p);border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--p)}
+.job .co{font-size:13px;font-weight:700;color:var(--p);letter-spacing:.04em;text-transform:uppercase}
+.job h3{font-size:20px;margin:2px 0;color:var(--t)}
 .job .dt{font-size:13px;color:var(--m);margin-bottom:14px}
 .job ul{list-style:none}
-.job li{position:relative;padding-left:20px;margin-bottom:8px;font-size:14px;color:var(--m)}
-.job li::before{content:'\25B8';position:absolute;left:0;color:var(--p)}
+.job li{position:relative;padding-left:20px;margin-bottom:9px;font-size:14.5px;color:var(--m)}
+.job li::before{content:'';position:absolute;left:2px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--p)}
+
+/* Projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:-20px 0 32px}
+.fl{padding:8px 18px;border-radius:8px;border:1px solid var(--b);background:var(--bg);color:var(--m);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:var(--tr)}
+.fl:hover{border-color:var(--p);color:var(--p)}
+.fl.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+[data-theme=dark] .fl.on{background:var(--p);border-color:var(--p)}
 .proj{display:flex;flex-direction:column}
-.proj h3{font-size:17px;margin-bottom:10px;overflow-wrap:anywhere}
+.proj.hide{display:none}
+.proj h3{font-size:16.5px;margin-bottom:10px;overflow-wrap:anywhere}
 .proj p{font-size:14px;color:var(--m);margin-bottom:16px;flex:1}
 .proj .foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.proj .foot span{padding:4px 12px;background:rgba(37,99,235,.08);border-radius:6px;font-size:12px;font-weight:500;color:var(--p)}
-.proj .foot i{margin-left:auto;color:var(--m)}
-.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.proj .foot span{padding:3px 10px;background:rgba(40,120,168,.08);border-radius:6px;font-size:12px;font-weight:500;color:var(--p)}
+.proj .foot span.cat{background:transparent;border:1px solid var(--b);color:var(--m)}
+.proj .foot i{margin-left:auto;color:var(--m);font-size:17px}
+.more{text-align:center;margin-top:40px}
+
+/* Education / Contact */
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
 .edu .card{border-top:3px solid var(--p)}
-.edu .sc{font-size:14px;color:var(--p);font-weight:500}
+.edu .sc{font-size:14px;color:var(--p);font-weight:600}
 .edu .dt{font-size:13px;color:var(--m)}
-.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:900px;margin:0 auto}
-.ct{display:flex;align-items:center;gap:16px;padding:20px;background:var(--bg);border:1px solid var(--b);border-radius:16px;transition:var(--tr)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;max-width:900px;margin:0 auto}
+.ct{display:flex;align-items:center;gap:16px;padding:18px 20px;background:var(--bg);border:1px solid var(--b);border-radius:12px;transition:var(--tr)}
 .ct:hover{border-color:var(--p);transform:translateY(-3px)}
-.ct .ic{width:44px;height:44px;flex-shrink:0;border-radius:10px;background:rgba(37,99,235,.1);color:var(--p);display:flex;align-items:center;justify-content:center;font-size:18px}
+.ct .ic{width:44px;height:44px;flex-shrink:0;border-radius:10px;background:rgba(40,120,168,.10);color:var(--p);display:flex;align-items:center;justify-content:center;font-size:18px}
 .ct h4{font-size:14px}
 .ct p{font-size:13px;color:var(--m);overflow-wrap:anywhere}
-.foot-bar{padding:40px 0;border-top:1px solid var(--b);text-align:center;font-size:14px;color:var(--m)}
-.foot-bar div{display:flex;justify-content:center;gap:16px;margin-top:12px;font-size:18px}
+.foot-bar{padding:36px 0;border-top:1px solid var(--b);text-align:center;font-size:14px;color:var(--m)}
+.foot-bar div{display:flex;justify-content:center;gap:18px;margin-top:12px;font-size:18px}
 .foot-bar a:hover{color:var(--p)}
-#top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--p),var(--a));color:#fff;border:none;cursor:pointer;opacity:0;visibility:hidden;transition:var(--tr);z-index:999}
+#top{position:fixed;bottom:24px;right:24px;width:42px;height:42px;border-radius:10px;background:var(--navy);color:#fff;border:none;cursor:pointer;opacity:0;visibility:hidden;transition:var(--tr);z-index:999}
+[data-theme=dark] #top{background:var(--p)}
 #top.on{opacity:1;visibility:visible}
 a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2px}
+
+/* Responsive */
 @media(max-width:1024px){
 .hero-grid,.about{grid-template-columns:1fr;text-align:center}
-.photo{order:-1}.btns,.chips{justify-content:center}
+.photo{order:-1}
+.tag,.stats{margin-left:auto;margin-right:auto}
+.btns,.chips{justify-content:center}
 .stats{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
-.links{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;opacity:0;visibility:hidden;transition:var(--tr)}
+.links{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;opacity:0;visibility:hidden;transition:var(--tr);z-index:1000}
 .links.open{opacity:1;visibility:visible}
-.burger{display:flex;z-index:1001}
-.photo-box{width:240px;height:240px;font-size:72px}
+.links a{font-size:18px}
+.burger{display:flex}
+.photo-box{width:230px;height:230px;font-size:64px}
 .tl{padding-left:30px}.job::before{left:-30px}
+.sec{padding:72px 0}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -134,7 +165,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2
 
 <nav class="nav" id="nav">
 <div class="nav-in">
-<a href="#home" class="logo">SC</a>
+<a href="#home" class="logo">SUHANIBEN CHAUDHARI</a>
 <ul class="links" id="links">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -154,46 +185,45 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2
 <header class="hero" id="home">
 <div class="container">
 <div class="hero-grid">
-<div class="photo"><div class="photo-box">SC<img src="profile.jpg" alt="Suhaniben Krupal Chaudhari" onerror="this.remove()"></div></div>
 <div>
-<div class="badge"><i></i>Open to supply chain analyst roles</div>
+<div class="eyebrow"><i></i>Open to supply chain analyst roles</div>
 <h1 class="name">Suhaniben Krupal Chaudhari</h1>
 <p class="role">Supply Chain Analyst</p>
-<p class="tag">Turning transportation, warehouse, and inventory data into lower costs and faster delivery.</p>
-<div class="typing" id="typing"></div>
+<p class="tag">Transportation, warehouse, and inventory analytics that lower costs and speed up delivery. SQL, Python, Power BI, TMS, and WMS.</p>
 <div class="btns">
-<a href="#contact" class="btn btn-p"><i class="fas fa-paper-plane"></i> Contact me</a>
+<a href="#contact" class="btn btn-p"><i class="fas fa-envelope"></i> Contact me</a>
 <a href="Suhaniben_Krupal_Chaudhari_Resume.pdf" download class="btn btn-o"><i class="fas fa-download"></i> Download resume</a>
 <a href="https://github.com/csb3799" target="_blank" rel="noopener" class="btn btn-o btn-i" aria-label="GitHub"><i class="fab fa-github"></i></a>
 <a href="https://www.linkedin.com/in/suhani-chaudhari-713202408/" target="_blank" rel="noopener" class="btn btn-o btn-i" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
 </div>
 <div class="stats">
 <div class="stat"><b data-n="4" data-s="+">4+</b><span>Years experience</span></div>
-<div class="stat"><b data-n="40" data-s="">40</b><span>Lanes analyzed</span></div>
+<div class="stat"><b data-n="40" data-s="">40</b><span>High-volume lanes analyzed</span></div>
 <div class="stat"><b data-n="20" data-s="K+">20K+</b><span>Daily orders tracked</span></div>
-<div class="stat"><b data-n="10" data-p="~" data-s="%">~10%</b><span>Transport spend cut</span></div>
+<div class="stat"><b data-n="10" data-p="~" data-s="%">~10%</b><span>Avoidable transport spend reduced</span></div>
 </div>
 </div>
+<div class="photo"><div class="photo-box">SC<img src="profile.jpg" alt="Suhaniben Krupal Chaudhari" onerror="this.remove()"></div></div>
 </div>
 </div>
 </header>
 
 <section class="sec" id="about">
 <div class="container">
-<div class="head"><h2>Who I am</h2><p>A supply chain analyst who works across transportation, warehousing, and inventory.</p></div>
+<div class="head"><h2>About</h2><p>Analytics across transportation, warehousing, and inventory.</p></div>
 <div class="about">
 <div>
 <p>I’m a Supply Chain Analyst with <strong>4+ years of experience</strong> in transportation, logistics, warehouse operations, and supply chain analytics. I use SQL, Python, Excel, Power BI, TMS, and WMS for transportation optimization, demand forecasting, inventory planning, KPI reporting, and root-cause analysis.</p>
-<p>My work has improved transportation cost, warehouse cycle time, capacity utilization, and delivery performance. I hold an MS in Business Analytics from DePaul University.</p>
+<p>My work has improved transportation cost, warehouse cycle time, capacity utilization, and delivery performance. I hold an M.S. in Business Analytics from DePaul University and publish my analytics projects on GitHub.</p>
 <div class="chips">
 <span class="chip">Demand Forecasting</span><span class="chip">Transportation Planning</span><span class="chip">Inventory Optimization</span><span class="chip">Warehouse Operations</span><span class="chip">KPI Dashboards</span><span class="chip">Root-Cause Analysis</span><span class="chip">Lean Six Sigma</span>
 </div>
 </div>
 <div class="facts">
-<div class="fact"><b>~10%</b><span>Avoidable transport spend reduced</span></div>
-<div class="fact"><b>~10%</b><span>Weekly lane forecast MAPE</span></div>
-<div class="fact"><b>~10%</b><span>Warehouse order-cycle time cut</span></div>
-<div class="fact"><b>~30%</b><span>Manual reporting effort cut</span></div>
+<div class="fact"><b>~10%</b><span>Avoidable transportation spend reduced</span></div>
+<div class="fact"><b>~10%</b><span>MAPE on weekly lane forecasts</span></div>
+<div class="fact"><b>~10%</b><span>Warehouse order-cycle time reduced</span></div>
+<div class="fact"><b>~30%</b><span>Manual reporting effort reduced</span></div>
 </div>
 </div>
 </div>
@@ -201,14 +231,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2
 
 <section class="sec alt" id="skills">
 <div class="container">
-<div class="head"><h2>Skills</h2><p>Planning, logistics, and analytics tools I use day to day.</p></div>
+<div class="head"><h2>Skills</h2><p>Planning, logistics, and analytics capabilities.</p></div>
 <div class="grid">
-<div class="card"><div class="ic"><i class="fas fa-calendar-check"></i></div><h3>Supply chain planning</h3><div class="sk"><span>Demand Forecasting</span><span>Supply Planning</span><span>Replenishment</span><span>MRP</span><span>S&amp;OP</span><span>Capacity Planning</span><span>Safety Stock</span><span>Reorder Point</span></div></div>
-<div class="card"><div class="ic"><i class="fas fa-truck-fast"></i></div><h3>Logistics &amp; transportation</h3><div class="sk"><span>Route Optimization</span><span>Freight Management</span><span>Carrier Management</span><span>Load Planning</span><span>OTD / OTIF</span><span>Transportation Cost Analysis</span><span>TMS</span></div></div>
-<div class="card"><div class="ic"><i class="fas fa-warehouse"></i></div><h3>Warehouse &amp; inventory</h3><div class="sk"><span>WMS</span><span>Receiving</span><span>Put-away</span><span>Picking &amp; Packing</span><span>ABC Analysis</span><span>Cycle Counting</span><span>Inventory Turnover</span><span>Inventory Accuracy</span></div></div>
-<div class="card"><div class="ic"><i class="fas fa-handshake"></i></div><h3>Procurement &amp; ERP</h3><div class="sk"><span>Supplier Scorecards</span><span>Vendor Performance</span><span>Strategic Sourcing</span><span>SAP S/4HANA</span><span>SAP IBP</span><span>SAP EWM</span><span>SAP Ariba</span><span>Oracle SCM</span><span>Oracle EBS</span></div></div>
-<div class="card"><div class="ic"><i class="fas fa-chart-column"></i></div><h3>Analytics &amp; BI</h3><div class="sk"><span>SQL</span><span>Python</span><span>Pandas</span><span>Advanced Excel</span><span>Power BI</span><span>Tableau</span><span>Power Query</span><span>DAX</span><span>Azure</span></div></div>
-<div class="card"><div class="ic"><i class="fas fa-gears"></i></div><h3>Process improvement</h3><div class="sk"><span>Lean Six Sigma</span><span>DMAIC</span><span>Kaizen</span><span>Bottleneck Analysis</span><span>Root-Cause Analysis</span><span>Cost Reduction</span><span>Reporting Automation</span></div></div>
+<div class="card"><div class="ic"><i class="fas fa-calendar-check"></i></div><h3>Supply Chain Planning</h3><div class="sk"><span>Demand Planning</span><span>Demand Forecasting</span><span>Supply Planning</span><span>Replenishment</span><span>MRP</span><span>S&amp;OP</span><span>Capacity Planning</span><span>Safety Stock</span><span>Reorder Point</span></div></div>
+<div class="card"><div class="ic"><i class="fas fa-truck-fast"></i></div><h3>Logistics &amp; Transportation</h3><div class="sk"><span>Transportation Planning</span><span>Route Optimization</span><span>Freight Management</span><span>Carrier Management</span><span>Load Planning</span><span>OTD / OTIF</span><span>Transportation Cost Analysis</span><span>TMS</span></div></div>
+<div class="card"><div class="ic"><i class="fas fa-warehouse"></i></div><h3>Warehouse &amp; Inventory</h3><div class="sk"><span>WMS</span><span>Receiving</span><span>Put-away</span><span>Picking &amp; Packing</span><span>ABC Analysis</span><span>Cycle Counting</span><span>Inventory Turnover</span><span>Inventory Accuracy</span><span>Inventory Aging</span><span>Backorder Management</span></div></div>
+<div class="card"><div class="ic"><i class="fas fa-handshake"></i></div><h3>Procurement &amp; ERP</h3><div class="sk"><span>Supplier Scorecards</span><span>Vendor Performance</span><span>Supplier Risk Management</span><span>Strategic Sourcing</span><span>SAP S/4HANA</span><span>SAP MM</span><span>SAP IBP</span><span>SAP EWM</span><span>SAP Ariba</span><span>Oracle SCM</span><span>Oracle EBS</span><span>Oracle TMS</span></div></div>
+<div class="card"><div class="ic"><i class="fas fa-chart-column"></i></div><h3>Analytics &amp; BI</h3><div class="sk"><span>SQL</span><span>Python</span><span>R</span><span>Pandas</span><span>Advanced Excel</span><span>Power BI</span><span>Tableau</span><span>Power Query</span><span>DAX</span><span>Azure</span><span>KPI Dashboards</span><span>Variance Analysis</span></div></div>
+<div class="card"><div class="ic"><i class="fas fa-gears"></i></div><h3>Process Improvement</h3><div class="sk"><span>Lean Six Sigma</span><span>DMAIC</span><span>Kaizen</span><span>Bottleneck Analysis</span><span>Root-Cause Analysis</span><span>Cost Reduction</span><span>Reporting Automation</span><span>Data Validation</span><span>Stakeholder Management</span></div></div>
 </div>
 </div>
 </section>
@@ -220,22 +250,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2
 <div class="job">
 <div class="co">C.H. Robinson</div><h3>Supply Chain Analyst</h3><div class="dt"><i class="far fa-calendar-alt"></i> June 2025 – June 2026 · USA</div>
 <ul>
-<li>Analyzed shipment, lane, carrier, route, and freight-spend data from Navisphere TMS with SQL and Python, uncovering cost and capacity drivers across 40 high-volume lanes.</li>
-<li>Built Power BI dashboards for On-Time Delivery, tender acceptance, carrier performance, and transit variance, cutting weekly reporting from ~10 hours to ~7 hours.</li>
-<li>Supported routing and carrier-allocation decisions that reduced avoidable transportation spend by ~10%.</li>
-<li>Built Python weekly lane-level shipment forecasts from historical TMS volumes and seasonality, reaching ~10% MAPE.</li>
-<li>Used SQL/Python root-cause analysis on late pickups, missed deliveries, tender rejections, and dwell, reducing recurring service exceptions by ~15%.</li>
-<li>Worked with API/EDI shipment feeds and Azure, adding FMCSA authority, insurance, safety, and carrier-compliance checks to transportation execution.</li>
+<li>Analyzed shipment, lane, carrier, route, and freight-spend data from Navisphere TMS using SQL and Python, uncovering cost and capacity drivers across 40 high-volume lanes.</li>
+<li>Built Power BI dashboards for On-Time Delivery, tender acceptance, carrier performance, and transit variance, cutting weekly transportation reporting from ~10 hours to ~7 hours.</li>
+<li>Evaluated lane density, carrier rates, distance, capacity, and historical volumes, supporting routing and carrier-allocation decisions that reduced avoidable transportation spend by ~10%.</li>
+<li>Built Python weekly lane-level shipment forecasts from historical TMS volumes and seasonality, reaching ~10% MAPE to support carrier capacity, trailer, and peak-season planning.</li>
+<li>Used SQL and Python root-cause analysis on late pickups, missed deliveries, tender rejections, dwell, and capacity exceptions, reducing recurring service exceptions by ~15%.</li>
+<li>Worked with API/EDI shipment feeds, Azure, SQL, Python, and Power BI, adding FMCSA authority, insurance, safety, and carrier-compliance checks to transportation execution.</li>
 </ul>
 </div>
 <div class="job">
-<div class="co">Delhivery</div><h3>Supply Chain Analyst</h3><div class="dt"><i class="far fa-calendar-alt"></i> Feb 2021 – Aug 2024 · India</div>
+<div class="co">Delhivery</div><h3>Supply Chain Analyst</h3><div class="dt"><i class="far fa-calendar-alt"></i> February 2021 – August 2024 · India</div>
 <ul>
-<li>Reduced warehouse order-cycle time by ~10% across 5 fulfillment centers by optimizing receiving, put-away, picking, packing, and dispatch with Lean Six Sigma and RCA.</li>
-<li>Built Power BI dashboards for OTIF, TAT, inventory accuracy, capacity utilization, and dispatch exceptions across 20K+ daily orders.</li>
-<li>Improved peak-period capacity utilization by ~12% with Python/Pandas and SQL shipment-volume forecasts that fed replenishment, labor, dock, and vehicle planning.</li>
-<li>Reduced recurring transportation and delivery exceptions by ~14% by finding consolidation, routing, and dispatch-scheduling opportunities.</li>
-<li>Cut manual reporting effort by ~30% by automating SQL/Excel data preparation and KPI reporting, while keeping GST, E-Way Bill, and SOP compliance.</li>
+<li>Reduced warehouse order-cycle time by ~10% across 5 fulfillment centers by optimizing receiving, put-away, picking, packing, and dispatch using SQL, WMS data, Lean Six Sigma, and RCA.</li>
+<li>Improved visibility across 20K+ daily orders with Power BI dashboards for OTIF, TAT, inventory accuracy, capacity utilization, shipment ageing, and dispatch exceptions.</li>
+<li>Improved peak-period capacity utilization by ~12% using Python/Pandas and SQL shipment forecasts that combined ABC analysis, SKU velocity, and seasonality for replenishment, labor, dock, and vehicle planning.</li>
+<li>Reduced recurring transportation and delivery exceptions by ~14% by optimizing lane, hub, load, and vehicle performance and identifying consolidation, routing, and dispatch-scheduling opportunities.</li>
+<li>Cut manual reporting effort by ~30% by automating SQL/Excel data preparation and KPI reporting in Power BI, while maintaining GST, E-Way Bill, and SOP compliance.</li>
 </ul>
 </div>
 </div>
@@ -244,8 +274,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2
 
 <section class="sec alt" id="projects">
 <div class="container">
-<div class="head"><h2>Projects</h2><p>Supply chain, logistics, forecasting, and analytics work on GitHub.</p></div>
+<div class="head"><h2>Projects</h2><p>Forecasting, logistics, warehouse, and analytics work from my GitHub.</p></div>
+<div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
 <div class="grid" id="projGrid"></div>
+<div class="more"><a href="https://github.com/csb3799?tab=repositories" target="_blank" rel="noopener" class="btn btn-o"><i class="fab fa-github"></i> View all repositories</a></div>
 </div>
 </section>
 
@@ -261,7 +293,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--p);outline-offset:2
 
 <section class="sec alt" id="contact">
 <div class="container">
-<div class="head"><h2>Get in touch</h2><p>Email me about supply chain analyst roles or projects.</p></div>
+<div class="head"><h2>Contact</h2><p>Reach out about supply chain analyst roles or projects.</p></div>
 <div class="contact">
 <a class="ct" href="mailto:suhanibenkrupal@myjobstech.com"><div class="ic"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>suhanibenkrupal@myjobstech.com</p></div></a>
 <a class="ct" href="tel:+18723819276"><div class="ic"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><p>+1 (872) 381-9276</p></div></a>
@@ -295,62 +327,72 @@ root.setAttribute('data-theme',saved||'light');icon();
 tb.onclick=function(){var n=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}icon()};
 
 var links=document.getElementById('links'),burger=document.getElementById('burger');
-burger.onclick=function(){links.classList.toggle('open')};
-links.querySelectorAll('a').forEach(function(a){a.onclick=function(){links.classList.remove('open')}});
+burger.onclick=function(){
+var open=links.classList.toggle('open');
+burger.firstChild.className=open?'fas fa-xmark':'fas fa-bars';
+};
+links.querySelectorAll('a').forEach(function(a){a.onclick=function(){links.classList.remove('open');burger.firstChild.className='fas fa-bars'}});
 
-var nav=document.getElementById('nav'),bar=document.getElementById('bar'),top=document.getElementById('top');
+var nav=document.getElementById('nav'),bar=document.getElementById('bar'),topBtn=document.getElementById('top');
 function onScroll(){
 var y=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;
-nav.classList.toggle('scrolled',y>50);top.classList.toggle('on',y>400);
+nav.classList.toggle('scrolled',y>50);topBtn.classList.toggle('on',y>400);
 bar.style.width=h>0?(y/h*100)+'%':'0';
 var cur='';document.querySelectorAll('section[id],header[id]').forEach(function(s){if(y>=s.offsetTop-120)cur=s.id});
 links.querySelectorAll('a').forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur)});
 }
 window.addEventListener('scroll',onScroll);onScroll();
-top.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+topBtn.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
 
-var phrases=['Transportation & logistics analytics','Demand forecasting','Inventory optimization','Power BI dashboards','Lean Six Sigma'],pi=0,ci=0,del=false,el=document.getElementById('typing');
-function type(){
-var p=phrases[pi];
-if(!del){el.textContent=p.slice(0,++ci);if(ci===p.length){del=true;return setTimeout(type,1800)}setTimeout(type,60)}
-else{el.textContent=p.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;return setTimeout(type,400)}setTimeout(type,30)}
-}
-if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)el.textContent=phrases[0];else type();
-
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var stats=document.querySelector('.stats');
-if(stats&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+if(stats&&!reduce&&'IntersectionObserver' in window){
 new IntersectionObserver(function(es,o){
 if(!es[0].isIntersecting)return;o.disconnect();
 stats.querySelectorAll('b').forEach(function(b){
 var n=+b.dataset.n,s=b.dataset.s||'',p=b.dataset.p||'',t0=performance.now();
-(function step(t){var k=Math.min((t-t0)/1500,1);b.textContent=p+Math.floor(n*(1-Math.pow(1-k,3)))+s;if(k<1)requestAnimationFrame(step)})(t0);
+(function step(t){var k=Math.min((t-t0)/1400,1);b.textContent=p+Math.floor(n*(1-Math.pow(1-k,3)))+s;if(k<1)requestAnimationFrame(step)})(t0);
 });
 },{threshold:.3}).observe(stats);
 }
 
+/* Projects: [repo, title, description, tech, category] */
 var base='https://github.com/csb3799/';
 var projects=[
-['Demand-Forecasting-Inventory-Optimization','Demand Forecasting & Inventory Optimization','Forecasts demand and optimizes inventory policy in Python.','Python'],
-['Retail-Inventory-Forecasting-Prophet','Retail Inventory Forecasting with Prophet','Retail inventory and demand forecasting with Facebook Prophet.','Jupyter Notebook'],
-['Power-BI---Amana-Foods-Supply-Chain-Performance-Analysis','Amana Foods Supply Chain Performance','Power BI analysis of supply chain performance for Amana Foods.','Power BI'],
-['Transportation-and-Logistics-Analysis-F20-Analytics-Feb-2025-Challenge','Transportation & Logistics Analysis','Transportation and logistics analysis for the F20 Analytics February 2025 challenge.','Jupyter Notebook'],
-['Predictive-Model-for-choosing-correct-shipping-mode-Supply-chain-and-Logistic-Analytics','Shipping Mode Prediction Model','Predictive model that recommends the right shipping mode for supply chain and logistics orders.','R'],
-['warehouse_loc_determination','Warehouse Location Determination','Analysis to determine suitable warehouse locations.','R'],
-['Supply-Chain-Analysis-Capstone-Project','Supply Chain Analysis Capstone','Capstone project applying supply chain analytics end to end.','Jupyter Notebook'],
-['Supply-Chain-Analytics','Supply Chain Analytics','Supply chain data analysis and modeling in notebooks.','Jupyter Notebook'],
-['swades-milk-sc-analytics','Swades Milk Supply Chain Analytics','Supply chain analytics for a dairy (milk) business.','Analytics'],
-['coffee-sustainability-pipeline','Coffee Sustainability Pipeline','R pipeline for analyzing coffee supply chain sustainability.','R'],
-['Covid19_Vaccination_Analysis_in_SQL','COVID-19 Vaccination Analysis in SQL','SQL analysis of COVID-19 vaccination and the pandemic’s impact worldwide.','SQL']
+['Demand-Forecasting-Inventory-Optimization','Demand Forecasting & Inventory Optimization','Forecasts demand and optimizes inventory policy in Python.','Python','Forecasting'],
+['Retail-Inventory-Forecasting-Prophet','Retail Inventory Forecasting with Prophet','Retail inventory and demand forecasting with Facebook Prophet.','Jupyter Notebook','Forecasting'],
+['Power-BI---Amana-Foods-Supply-Chain-Performance-Analysis','Amana Foods Supply Chain Performance','Analyzes the service levels received by Amana Foods customers in order to improve them.','Power BI','Analytics'],
+['Transportation-and-Logistics-Analysis-F20-Analytics-Feb-2025-Challenge','Transportation & Logistics Analysis','Transportation and logistics analysis for the F20 Analytics February 2025 challenge.','Jupyter Notebook','Transportation'],
+['Predictive-Model-for-choosing-correct-shipping-mode-Supply-chain-and-Logistic-Analytics','Shipping Mode Prediction Model','Predictive model that recommends the right shipping mode for supply chain and logistics orders.','R','Transportation'],
+['warehouse_loc_determination','Warehouse Location Determination','Analysis to determine suitable warehouse locations.','R','Warehouse'],
+['coffee-sustainability-pipeline','Coffee Sustainability Pipeline','End-to-end pipeline with automated EUDR traceability assessment, regional KPI analysis, and an interactive dashboard.','R','Analytics'],
+['pharma-supply-chain-sql','Pharma Supply Chain SQL','SQL-based analysis of pharmaceutical supply chain data.','Python','SQL'],
+['Supply-Chain-Analysis-Capstone-Project','Supply Chain Analysis Capstone','Capstone project applying supply chain analytics end to end.','Jupyter Notebook','Analytics'],
+['Supply-Chain-Analytics','Supply Chain Analytics','Supply chain data analysis and modeling in notebooks.','Jupyter Notebook','Analytics'],
+['Supply-Chain','Supply Chain Analysis in R','Supply chain data analysis in R.','R','Analytics'],
+['swades-milk-sc-analytics','Swades Milk Supply Chain Analytics','Supply chain analytics for a dairy (milk) business.','Analytics','Analytics'],
+['Covid19_Vaccination_Analysis_in_SQL','COVID-19 Vaccination Analysis in SQL','Insights on the global impact of COVID-19 and vaccination using SQL.','SQL','SQL']
 ];
-var g=document.getElementById('projGrid');
+
+var g=document.getElementById('projGrid'),fl=document.getElementById('filters');
 projects.forEach(function(p){
-var a=document.createElement('a');a.className='card proj';a.href=base+p[0];a.target='_blank';a.rel='noopener';
+var a=document.createElement('a');a.className='card proj';a.href=base+p[0];a.target='_blank';a.rel='noopener';a.dataset.cat=p[4];
 var h=document.createElement('h3');h.textContent=p[1];
 var d=document.createElement('p');d.textContent=p[2];
 var f=document.createElement('div');f.className='foot';
 var s=document.createElement('span');s.textContent=p[3];
+var c=document.createElement('span');c.className='cat';c.textContent=p[4];
 var i=document.createElement('i');i.className='fab fa-github';
-f.appendChild(s);f.appendChild(i);a.appendChild(h);a.appendChild(d);a.appendChild(f);g.appendChild(a);
+f.appendChild(s);f.appendChild(c);f.appendChild(i);a.appendChild(h);a.appendChild(d);a.appendChild(f);g.appendChild(a);
+});
+
+['All','Forecasting','Transportation','Warehouse','Analytics','SQL'].forEach(function(c,k){
+var b=document.createElement('button');b.type='button';b.className='fl'+(k===0?' on':'');b.textContent=c;
+b.onclick=function(){
+fl.querySelectorAll('.fl').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+g.querySelectorAll('.proj').forEach(function(card){card.classList.toggle('hide',c!=='All'&&card.dataset.cat!==c)});
+};
+fl.appendChild(b);
 });
 })();
 </script>
